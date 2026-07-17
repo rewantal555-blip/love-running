@@ -86,3 +86,23 @@ main {
 footer {
   background-color:;
 }
+/* media quire: for tablet and all devices */
+@media screen and (min-width:768px) {
+  /* header */
+  header nav {
+    display: block;
+    padding-right: 1rem;
+    width: fit-content;
+    position: relative;
+    box-shadow: none;
+  }
+  .nav-toggle-label {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header nav ul li {
+    padding-left: 1rem;
+  }
+}
