@@ -45,7 +45,6 @@ header nav ul {
   list-style-type: none;
   letter-spacing: 4px;
   font-size: 110%;
-  
 }
 header nav ul li {
   margin-bottom: 1em;
@@ -73,9 +72,9 @@ header nav {
 .nav-toggle-label {
   font-size: 2rem;
 }
-#nav-toggle:checked~nav {
+#nav-toggle:checked ~ nav {
   display: block;
-  }
+}
 /* main */
 main {
   background-color: #20874c;
@@ -87,7 +86,7 @@ footer {
   background-color:;
 }
 /* media quiry: for tablet and all devices */
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   /* header */
   header nav {
     display: block;
@@ -105,31 +104,32 @@ footer {
   header nav ul li {
     padding-left: 1rem;
   }
-#logo {
-  font-size: 200%;
-  margin: 0 0.5rem;
-  line-height: 75px;
-}
-/* push the main element down the accommdate header */
-main {
-  margin-top: 75px;
-}
+  #logo {
+    font-size: 200%;
+    margin: 0 0.5rem;
+    line-height: 75px;
+  }
+  /* push the main element down the accommdate header */
+  main {
+    margin-top: 75px;
+  }
 }
 /* footer */
-footer {
-  padding: 0 1rem;
-  width: 100%;
-  margin-top:1rem;
- 
-}
-footer ul li a i {
-  color: var(--main-color)
-}
-footer ul  {
+#social-networks {
+    top: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
   list-style-type: none;
 }
+#social-networks li a svg {
+  font-size: 160%;
+  padding:5%;
+  color: var(--main-color);
+}
+
 /* large devices( laptop and desktops ,992px and up )*/
-@media screen and (min-width:992px) {
+@media screen and (min-width: 992px) {
   header nav ul li a:hover {
     border-bottom: 1px solid var(--main-color);
   }
