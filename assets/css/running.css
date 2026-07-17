@@ -40,10 +40,20 @@ h1 {
   }
 header nav ul {
   list-style-type: none;
+  letter-spacing: 4px;
+  font-size:110%;
+  
+}
+header nav ul li {
+  margin-bottom: 1em;
+}
+.active {
+  border-bottom: 1px solid var(--main-color);
 }
 header nav ul li a {
   text-decoration: none;
-}
+  color:var(--main-color) ;
+ }
 /* main */
 main {
   background-color: #20874c;
