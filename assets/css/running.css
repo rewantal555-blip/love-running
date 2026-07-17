@@ -115,6 +115,19 @@ main {
   margin-top: 75px;
 }
 }
+/* footer */
+footer {
+  padding: 0 1rem;
+  width: 100%;
+  margin-top:1rem;
+ 
+}
+footer ul li a i {
+  color: var(--main-color)
+}
+footer ul  {
+  list-style-type: none;
+}
 /* large devices( laptop and desktops ,992px and up )*/
 @media screen and (min-width:992px) {
   header nav ul li a:hover {
