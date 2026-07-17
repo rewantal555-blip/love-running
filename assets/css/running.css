@@ -54,6 +54,14 @@ header nav ul li a {
   text-decoration: none;
   color:var(--main-color) ;
  }
+ header nav {
+  position: absolute;
+  left:0;
+  padding:0 1rem;
+  box-shadow: 0 2px 2px var(--main-color);
+  background-color: #ffffff;
+  width: 100%;
+ }
 /* main */
 main {
   background-color: #20874c;
