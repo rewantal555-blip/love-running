@@ -101,6 +101,49 @@ main {
 #hero-info > h2, #hero-info > h3 {
   color:#ffffff;
 }
+/* reasons section */
+#reasons {
+  width: 90%;
+  margin: 20px auto;
+  }
+#reasons h2 {
+  font-size: 280%;
+  margin-bottom: 20px ;
+  text-align: center;
+  }
+#benefits p {
+padding:0 20px;
+}
+#benefits-physical > div, #benefits-mental > div {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+#benefits hr {
+  border-bottom: 2px solid var(--main-color);
+  margin: 5px 0;
+}
+#circle-cover-bg {
+   background: url(../images/reasons-image.webp) no-repeat top center /cover;
+   width: 90vw;
+   height:90vw;
+   margin-bottom: 20px;
+   /*make a square image into a circle*/
+   border-radius:50% ;
+   -webkit-border-radius:50%;
+   -moz-border-radius:50%;
+   -ms-border-radius:50%;
+   -o-border-radius:50%;
+   max-width: 300px;
+   max-height: 300px;
+}
+#benefits-image {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 /* footer*/
 footer {
   background-color:#ffffff;
