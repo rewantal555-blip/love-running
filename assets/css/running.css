@@ -1,29 +1,43 @@
 /* Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap");
 /* Asterisk wildcard selector to override default styles added by the browser  */
+/* add variables */
+:root {
+  --main-color: #3a3a3a;
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   /* gereric body style */
-  color: #3a3a3a;
+  color: var(--main-color);
   font-family: "lato", sans-serif;
 }
 /* header */
 header {
   background-color: #ffffff;
   padding: 0 1rem;
-  box-shadow: 0 2px 2px #3a3a3a;
-  font-size: 30px;
-  width: 100%;
+  box-shadow: 0 2px 2px var(--main-color);
+    width: 100%;
   position: fixed;
   z-index: 99;
+  color: inherit;
 }
+header a {
+text-decoration: none;
+}
+h1 {
+  font-family:'oswald',sans-serif;
+  text-transform: uppercase;
+  letter-spacing:  2px;
+  color:#252525;
+  }
 header nav ul {
   list-style-type: none;
 }
