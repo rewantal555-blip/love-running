@@ -24,24 +24,27 @@ header {
   background-color: #ffffff;
   padding: 0 1rem;
   box-shadow: 0 2px 2px var(--main-color);
-    width: 100%;
+  width: 100%;
   position: fixed;
   z-index: 99;
   color: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 header a {
-text-decoration: none;
+  text-decoration: none;
 }
 h1 {
-  font-family:'oswald',sans-serif;
+  font-family: "oswald", sans-serif;
   text-transform: uppercase;
-  letter-spacing:  2px;
-  color:#252525;
-  }
+  letter-spacing: 2px;
+  color: #252525;
+}
 header nav ul {
   list-style-type: none;
   letter-spacing: 4px;
-  font-size:110%;
+  font-size: 110%;
   
 }
 header nav ul li {
@@ -52,20 +55,32 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color:var(--main-color) ;
- }
- header nav {
+  color: var(--main-color);
+}
+header nav {
   position: absolute;
-  left:0;
-  padding:0 1rem;
+  left: 0;
+  padding: 0 1rem;
   box-shadow: 0 2px 2px var(--main-color);
   background-color: #ffffff;
   width: 100%;
- }
+  top: 100%;
+  display: none;
+}
+#nav-toggle {
+  display: none;
+}
+.nav-toggle-label {
+  font-size: 2rem;
+}
+#nav-toggle:checked~nav {
+  display: block;
+  }
 /* main */
 main {
   background-color: #20874c;
   flex: 1 0 auto;
+  margin-top: 47px;
 }
 /* footer*/
 footer {
