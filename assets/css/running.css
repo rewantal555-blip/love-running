@@ -86,7 +86,7 @@ main {
 footer {
   background-color:;
 }
-/* media quire: for tablet and all devices */
+/* media quiry: for tablet and all devices */
 @media screen and (min-width:768px) {
   /* header */
   header nav {
@@ -114,4 +114,10 @@ footer {
 main {
   margin-top: 75px;
 }
+}
+/* large devices( laptop and desktops ,992px and up )*/
+@media screen and (min-width:992px) {
+  header nav ul li a:hover {
+    border-bottom: 1px solid var(--main-color);
+  }
 }
