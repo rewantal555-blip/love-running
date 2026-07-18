@@ -151,14 +151,14 @@ main {
 }
 /* times section */
 #times {
-  background: url(../images/dublin-city.webp) no-repeat center center /cover;
+  background: url(../images/dublin-city.webp) no-repeat center center / cover;
   /* handels responsivity without the need for a media query */
   display: flex;
   flex-wrap: wrap;
 }
 #times div {
   color: #fafafa;
-  background-color: rgba(0,0,0,.6);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   text-align: center;
   flex-basis: 200px;
@@ -185,11 +185,11 @@ main {
   margin-top: 47px;
 }
 #signup {
-padding: 20px 10% 0 10%;
-background-image: url(../images/signup-image.webp) ;
-background-position: 75%;
-background-size: cover;
-flex-grow: 1;
+  padding: 20px 10% 0 10%;
+  background-image: url(../images/signup-image.webp);
+  background-position: 75%;
+  background-size: cover;
+  flex-grow: 1;
 }
 #signup-form > h2 {
   color: #ffffff;
@@ -198,21 +198,21 @@ flex-grow: 1;
 #signup-form {
   padding: 30px;
   color: hsl(0, 0%, 100%);
-  background-color: rgb(60, 60, 60, .6);
-  }
+  background-color: rgb(60, 60, 60, 0.6);
+}
 .text-input {
-  color: #fafafa; 
-  background:  transparent;
+  color: #fafafa;
+  background: transparent;
   border: 1px solid #fafafa;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
-  margin:5px 0 20px ;
+  margin: 5px 0 20px;
   padding: 0 5px;
   height: 25px;
-  width:100%;
+  width: 100%;
 }
 .radio-button {
   display: flex;
@@ -225,7 +225,7 @@ flex-grow: 1;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
-  background-color:#454b1b ;
+  background-color: #454b1b;
   color: #fafafa;
   font-size: 100%;
   margin-top: 20px;
@@ -249,12 +249,11 @@ footer {
   color: var(--main-color);
 }
 /* media query: for large or landscape phones, min-width:576px and up */
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
   #photo {
     column-count: 2;
     column-gap: 0;
   }
-  
 }
 /* media quiry: for tablet and all devices */
 @media screen and (min-width: 768px) {
@@ -296,17 +295,16 @@ footer {
     width: 100%;
   }
   #benefits-physical > div,
-  #benefits-mental >div {
-    width:75%;
+  #benefits-mental > div {
+    width: 75%;
   }
-  #benefits-mental >div {
+  #benefits-mental > div {
     text-align: end;
     align-self: flex-end;
   }
   /* Gallery page */
   #photo {
     column-count: 3;
-   
   }
   /* form */
   #signup {
@@ -316,10 +314,10 @@ footer {
   #signup-form {
     position: absolute;
     top: 150px;
-    left:10%;
+    left: 10%;
   }
   .text-input:hover {
-    border-color:#f16c6b; 
+    border-color: #f16c6b;
   }
   .join-button:hover {
     background-color: #fafafa;
@@ -334,7 +332,7 @@ footer {
   /* gallery page */
   #photo {
     column-count: 4;
-      }
+  }
 }
 /* large devices ,1200px and up  */
 @media screen and (min-width: 1200px) {
