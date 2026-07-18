@@ -172,10 +172,10 @@ main {
 /* Gallery page  */
 #photo img {
   width: 100%;
-  line-height: 1;
+  line-height: 1em;
 }
 #photo {
-  line-height: 0gi;
+  line-height: 0;
 }
 
 /* footer*/
@@ -194,7 +194,14 @@ footer {
   padding: 5%;
   color: var(--main-color);
 }
-
+/* media query: for large or landscape phones, min-width:576px and up */
+@media screen and (min-width:576px) {
+  #photo {
+    column-count: 2;
+    column-gap: 0;
+  }
+  
+}
 /* media quiry: for tablet and all devices */
 @media screen and (min-width: 768px) {
   /* header */
@@ -242,12 +249,21 @@ footer {
     text-align: end;
     align-self: flex-end;
   }
+  /* Gallery page */
+  #photo {
+    column-count: 3;
+   
+  }
 }
 /* large devices( laptop and desktops ,992px and up )*/
 @media screen and (min-width: 992px) {
   header nav ul li a:hover {
     border-bottom: 1px solid var(--main-color);
   }
+  /* gallery page */
+  #photo {
+    column-count: 4;
+      }
 }
 /* large devices ,1200px and up  */
 @media screen and (min-width: 1200px) {
