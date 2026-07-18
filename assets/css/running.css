@@ -169,7 +169,14 @@ main {
   /* override the heading color set in general styles */
   color: #fafafa;
 }
-
+/* Gallery page  */
+#photo img {
+  width: 100%;
+  line-height: 1;
+}
+#photo {
+  line-height: 0gi;
+}
 
 /* footer*/
 footer {
